@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actionButton {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.bgImg {
+  width: 30%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .bgImg {
+    width: 100%;
+    height: 80%;
+  }
+}

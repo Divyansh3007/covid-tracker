@@ -9,9 +9,16 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ChartsModule } from 'ng2-charts';
 import { MatCardModule } from '@angular/material/card';
 import { SpinnerComponent } from './components/spinner/spinner/spinner.component';
+import { BaseComponent } from './components/base/base.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-  declarations: [AppComponent, GraphDialogComponent, SpinnerComponent],
+  declarations: [
+    AppComponent,
+    GraphDialogComponent,
+    SpinnerComponent,
+    BaseComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -19,6 +26,7 @@ import { SpinnerComponent } from './components/spinner/spinner/spinner.component
     MatDialogModule,
     ChartsModule,
     MatCardModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

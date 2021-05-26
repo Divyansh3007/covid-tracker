@@ -1,0 +1,56 @@
+<div class="content" role="main">
+  <img class="bgImg" src="../assets/images/Background.png" />
+  <div class="card-container">
+    <button
+      mat-raised-button
+      class="actionButton"
+      color="primary"
+      (click)="openDialog()"
+    >
+      Confirm
+    </button>
+    <button
+      mat-raised-button
+      class="actionButton"
+      color="warn"
+      (click)="openSpinner()"
+    >
+      Cancel
+    </button>
+    <!-- <a class="card" target="_blank" rel="noopener">
+      <span>Confirm </span>
+
+      <svg
+        class="material-icons"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </a>
+
+    <a class="card" target="_blank" rel="noopener">
+      <span>Cancel</span>
+
+      <svg
+        class="material-icons"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </a> -->
+  </div>
+  <div class="overlay" *ngIf="showSpinner">
+    <div class="spinner-wrapper">
+      <app-spinner></app-spinner>
+    </div>
+  </div>
+</div>
+<mat-dialog-actions align="center">
+  <button mat-button color="warn" mat-dialog-close>Close</button>
+</mat-dialog-actions>

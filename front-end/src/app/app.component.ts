@@ -6,6 +6,7 @@ import {
 } from '@angular/material/dialog';
 import { GraphDialogComponent } from './components/graph-dialog/graph-dialog.component';
 import { SpinnerComponent } from './components/spinner/spinner/spinner.component';
+import { BaseComponent } from './components/base/base.component';
 
 @Component({
   selector: 'app-root',
@@ -18,8 +19,8 @@ export class AppComponent {
   constructor(public dialog: MatDialog) {}
 
   openDialog(): void {
-    const dialogRef = this.dialog.open(GraphDialogComponent, {
-      width: '90%',
+    const dialogRef = this.dialog.open(BaseComponent, {
+      width: '100%',
     });
 
     dialogRef.afterClosed().subscribe((result) => {
